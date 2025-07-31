@@ -10,9 +10,9 @@ const Navigation = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About Me" },
-    { path: "/research", label: "Research & Current Publications" },
-    { path: "/publications", label: "Previous Publications" },
+    { path: "/about", label: "About" },
+    { path: "/research", label: "Research" },
+    { path: "/publications", label: "Publications" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -22,9 +22,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 font-serif font-semibold text-xl">
+          <Link to="/" className="flex items-center space-x-2 font-sans font-semibold text-xl">
             <GraduationCap className="h-6 w-6 text-primary" />
-            <span className="text-foreground">Dr. [Professor Name]</span>
+            <span className="text-foreground">Prof. Dr. Joachim Henkel</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, BookOpen, Users, Award } from "lucide-react";
+import { ArrowRight, BookOpen, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -11,14 +11,14 @@ const Home = () => {
       <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">
-              Dr. [Professor Name]
+            <h1 className="text-4xl md:text-6xl font-sans font-bold mb-6 leading-tight">
+              Prof. Dr. Joachim Henkel
             </h1>
             <p className="text-xl md:text-2xl font-light mb-4 opacity-90">
-              Professor of [Department/Field]
+              Professor of Innovation & Technology Management
             </p>
             <p className="text-lg md:text-xl mb-8 opacity-80 max-w-2xl mx-auto">
-              [University Name] • Researcher in [Primary Research Area]
+              Technical University of Munich (TUM) • Chair of Innovation & Technology Management
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-lg px-8">
@@ -30,50 +30,28 @@ const Home = () => {
               <Button size="lg" variant="outline" asChild className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                 <Link to="/about">About Me</Link>
               </Button>
+              <Button size="lg" variant="outline" asChild className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                <a href="https://www.ie.mgt.tum.de/en/tim/about-us/prof-dr-joachim-henkel/" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-5 w-5" />
+                  CV
+                </a>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quick Stats */}
-      <section className="py-12 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
-                <BookOpen className="h-8 w-8 text-primary-foreground" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">[X]+ Publications</h3>
-              <p className="text-muted-foreground">Peer-reviewed research articles</p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-accent rounded-full mb-4">
-                <Users className="h-8 w-8 text-accent-foreground" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">[X] Years</h3>
-              <p className="text-muted-foreground">Teaching & research experience</p>
-            </div>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-research-secondary rounded-full mb-4">
-                <Award className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-2">[X] Awards</h3>
-              <p className="text-muted-foreground">Research grants & recognitions</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Research Highlights */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-                Research Highlights
+              <h2 className="text-3xl md:text-4xl font-sans font-bold text-foreground mb-4">
+                Research Areas
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Exploring cutting-edge questions in [research field] with innovative methodologies
+                Exploring innovation management, intellectual property, and technology markets
               </p>
             </div>
 
@@ -85,10 +63,10 @@ const Home = () => {
                     Primary Focus
                   </Badge>
                   <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
-                    [Research Area 1]
+                    Profiting from Innovation
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Brief description of the research area and its significance to the field.
+                    Strategies and mechanisms for capturing value from innovative activities and R&D investments.
                   </p>
                 </CardContent>
               </Card>
@@ -96,13 +74,13 @@ const Home = () => {
               <Card className="group hover:shadow-lg transition-all duration-300 bg-gradient-card border-border/50">
                 <CardContent className="p-6">
                   <Badge variant="secondary" className="mb-4 bg-accent-light text-accent">
-                    Active Research
+                    Innovation Models
                   </Badge>
                   <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
-                    [Research Area 2]
+                    Open & User Innovation
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Current investigations and ongoing projects in this domain.
+                    Collaborative innovation models and the role of users in the innovation process.
                   </p>
                 </CardContent>
               </Card>
@@ -110,13 +88,40 @@ const Home = () => {
               <Card className="group hover:shadow-lg transition-all duration-300 bg-gradient-card border-border/50">
                 <CardContent className="p-6">
                   <Badge variant="secondary" className="mb-4 bg-research-secondary/20 text-research-secondary">
-                    Emerging Interest
+                    Technology Markets
                   </Badge>
                   <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
-                    [Research Area 3]
+                    Markets for Technology
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    New directions and collaborative opportunities being explored.
+                    Analysis of technology licensing, transfer, and commercialization strategies.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="group hover:shadow-lg transition-all duration-300 bg-gradient-card border-border/50">
+                <CardContent className="p-6">
+                  <Badge variant="secondary" className="mb-4 bg-primary-lighter text-primary">
+                    IP Strategy
+                  </Badge>
+                  <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
+                    Patent Management
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Strategic patent portfolio management and intellectual property optimization.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="group hover:shadow-lg transition-all duration-300 bg-gradient-card border-border/50">
+                <CardContent className="p-6">
+                  <Badge variant="secondary" className="mb-4 bg-accent-light text-accent">
+                    Legal & Economic
+                  </Badge>
+                  <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-primary transition-colors">
+                    Patent Infringement
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Economic and legal aspects of patent disputes and infringement cases.
                   </p>
                 </CardContent>
               </Card>
@@ -139,11 +144,11 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
+              <h2 className="text-3xl md:text-4xl font-sans font-bold text-foreground mb-4">
                 Recent Publications
               </h2>
               <p className="text-lg text-muted-foreground">
-                Latest contributions to academic literature
+                Latest contributions to innovation and technology management research
               </p>
             </div>
 

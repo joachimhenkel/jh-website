@@ -20,8 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
-				serif: ['Crimson Text', 'Georgia', 'serif'],
-				academic: ['Crimson Text', 'Georgia', 'serif']
+				serif: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
