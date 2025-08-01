@@ -153,6 +153,17 @@ const About = () => {
 
             {/* Sidebar */}
             <div className="space-y-6">
+              {/* Profile Image */}
+              <Card>
+                <CardContent className="p-6">
+                  <img 
+                    src="/lovable-uploads/fdaee9ed-9c1d-4d64-84df-b0196d96d7da.png" 
+                    alt="Prof. Dr. Joachim Henkel" 
+                    className="w-full rounded-lg"
+                  />
+                </CardContent>
+              </Card>
+
               {/* Contact Information */}
               <Card className="bg-card border-border/50">
                 <CardContent className="p-6">
@@ -162,19 +173,18 @@ const About = () => {
                   <div className="space-y-3">
                     <div className="flex items-center text-muted-foreground">
                       <Mail className="h-4 w-4 text-primary mr-3" />
-                      <span className="text-sm">[email@university.edu]</span>
+                      <span className="text-sm">henkel@wi.tum.de</span>
                     </div>
                     <div className="flex items-center text-muted-foreground">
                       <Phone className="h-4 w-4 text-primary mr-3" />
-                      <span className="text-sm">[Phone Number]</span>
+                      <span className="text-sm">+49 (0)89 289-25741</span>
                     </div>
                     <div className="flex items-start text-muted-foreground">
                       <MapPin className="h-4 w-4 text-primary mr-3 mt-0.5" />
                       <div className="text-sm">
-                        <div>[Office Room Number]</div>
-                        <div>[Department Building]</div>
-                        <div>[University Name]</div>
-                        <div>[City, State, ZIP]</div>
+                        <div>Room 2510</div>
+                        <div>Technical University of Munich</div>
+                        <div>Chair of Innovation & Technology Management</div>
                       </div>
                     </div>
                   </div>

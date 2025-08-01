@@ -3,12 +3,20 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, BookOpen, Download } from "lucide-react";
 import { Link } from "react-router-dom";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Home = () => {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero text-primary-foreground">
+      <section 
+        className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero text-primary-foreground"
+        style={{
+          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.8), rgba(29, 78, 216, 0.9)), url(${heroBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-sans font-bold mb-6 leading-tight">
@@ -17,7 +25,7 @@ const Home = () => {
             <p className="text-xl md:text-2xl font-light mb-4 opacity-90">
               Professor of Innovation & Technology Management
             </p>
-            <p className="text-lg md:text-xl mb-8 opacity-80 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl mb-8 opacity-80 max-w-3xl mx-auto whitespace-nowrap">
               Technical University of Munich (TUM) • Chair of Innovation & Technology Management
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -27,10 +35,10 @@ const Home = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button size="lg" variant="secondary" asChild className="text-lg px-8">
                 <Link to="/about">About Me</Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="text-lg px-8 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+              <Button size="lg" variant="secondary" asChild className="text-lg px-8">
                 <a href="https://www.ie.mgt.tum.de/en/tim/about-us/prof-dr-joachim-henkel/" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5" />
                   CV
@@ -159,17 +167,17 @@ const Home = () => {
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div className="flex-1">
                       <h3 className="font-semibold text-lg text-foreground mb-2">
-                        [Recent Publication Title]
+                        Deductive Certainty? Exploring the Boundaries of Trust Formation in Smart Contracts on Blockchains
                       </h3>
                       <p className="text-muted-foreground mb-2">
-                        [Journal Name], [Year] • Co-authors: [Names]
+                        Management of Information Systems Quarterly, 2025 • Co-author: D. Obermeier
                       </p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Brief abstract or description of the publication's key findings...
+                        This research examines trust formation mechanisms in blockchain-based smart contracts and their implications for organizational decision-making.
                       </p>
                     </div>
                     <Badge variant="outline" className="border-primary text-primary">
-                      [Research Area]
+                      Open Innovation
                     </Badge>
                   </div>
                 </CardContent>
@@ -180,17 +188,38 @@ const Home = () => {
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div className="flex-1">
                       <h3 className="font-semibold text-lg text-foreground mb-2">
-                        [Another Recent Publication]
+                        Being the best or being the only one – Dichotomous R&D strategy choices by startups aiming for acquisition
                       </h3>
                       <p className="text-muted-foreground mb-2">
-                        [Conference/Journal Name], [Year] • Co-authors: [Names]
+                        Journal of Economic Behavior and Organization, 2025 • Co-author: T. Rønde
                       </p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        Key insights and contributions from this research work...
+                        Analyzes R&D strategy choices of startups seeking acquisition, examining whether to pursue excellence or uniqueness in innovation.
                       </p>
                     </div>
                     <Badge variant="outline" className="border-accent text-accent">
-                      [Research Area]
+                      Profiting from Innovation
+                    </Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border/50">
+                <CardContent className="p-6">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-lg text-foreground mb-2">
+                        Licensing standard-essential patents in the IoT – A value chain perspective on markets for technology
+                      </h3>
+                      <p className="text-muted-foreground mb-2">
+                        Research Policy, 2022
+                      </p>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        Examines patent licensing challenges in IoT value chains and proposes frameworks for efficient technology markets.
+                      </p>
+                    </div>
+                    <Badge variant="outline" className="border-research-secondary text-research-secondary">
+                      Markets for Technology
                     </Badge>
                   </div>
                 </CardContent>
