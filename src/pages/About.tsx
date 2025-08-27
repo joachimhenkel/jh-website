@@ -55,43 +55,11 @@ const About = () => {
                     <GraduationCap className="h-6 w-6 text-primary mr-3" />
                     Education
                   </h2>
-                  <div className="space-y-6">
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Ph.D. in [Field], [Year]
-                      </h3>
-                      <p className="text-primary font-medium">[University Name]</p>
-                      <p className="text-muted-foreground">
-                        Dissertation: "[Dissertation Title]"
-                      </p>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        Advisor: [Advisor Name]
-                      </p>
-                    </div>
-
-                    <Separator />
-
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        M.A./M.S. in [Field], [Year]
-                      </h3>
-                      <p className="text-primary font-medium">[University Name]</p>
-                      <p className="text-muted-foreground">
-                        [Relevant thesis title or specialization]
-                      </p>
-                    </div>
-
-                    <Separator />
-
-                    <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        B.A./B.S. in [Field], [Year]
-                      </h3>
-                      <p className="text-primary font-medium">[University Name]</p>
-                      <p className="text-muted-foreground">
-                        [Magna Cum Laude, Phi Beta Kappa, etc.]
-                      </p>
-                    </div>
+                  <div className="space-y-4 text-sm">
+                    <div><strong>1997:</strong> Ph.D. in Economics (Dr. rer. pol.), University of Mannheim</div>
+                    <div><strong>1991:</strong> Diplom-Physiker, University of Bonn</div>
+                    <div><strong>1988-1991:</strong> Physics, University of Bonn</div>
+                    <div><strong>1986-1988:</strong> Physics and Mathematics, Ruhr University Bochum</div>
                   </div>
                 </CardContent>
               </Card>
@@ -102,49 +70,39 @@ const About = () => {
                   <h2 className="text-2xl font-serif font-bold text-foreground mb-6">
                     Professional Experience
                   </h2>
-                  <div className="space-y-6">
+                  <div className="space-y-4 text-sm">
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Professor, [Department]
-                      </h3>
-                      <p className="text-primary font-medium">
-                        [University Name] • [Year] - Present
-                      </p>
-                      <ul className="text-muted-foreground mt-2 space-y-1">
-                        <li>• [Key responsibility or achievement]</li>
-                        <li>• [Teaching or research leadership role]</li>
-                        <li>• [Administrative duties or service]</li>
-                      </ul>
+                      <strong>2004 - Present:</strong> Professor, Chair of Innovation & Technology Management, Technical University of Munich
                     </div>
-
-                    <Separator />
-
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Associate Professor, [Department]
-                      </h3>
-                      <p className="text-primary font-medium">
-                        [University Name] • [Year] - [Year]
-                      </p>
-                      <ul className="text-muted-foreground mt-2 space-y-1">
-                        <li>• [Key accomplishment during this period]</li>
-                        <li>• [Research milestones or grants]</li>
-                      </ul>
+                      <strong>2015:</strong> Visiting Scholar, Singapore Management University (February to August)
                     </div>
-
-                    <Separator />
-
                     <div>
-                      <h3 className="text-lg font-semibold text-foreground">
-                        Assistant Professor, [Department]
-                      </h3>
-                      <p className="text-primary font-medium">
-                        [University Name] • [Year] - [Year]
-                      </p>
-                      <ul className="text-muted-foreground mt-2 space-y-1">
-                        <li>• [Early career achievements]</li>
-                        <li>• [Course development or research establishment]</li>
-                      </ul>
+                      <strong>2013:</strong> Visiting Scholar, Harvard Business School (February to August)
+                    </div>
+                    <div>
+                      <strong>2008:</strong> International Visiting Scholar, Harvard Business School (March to September)
+                    </div>
+                    <div>
+                      <strong>2006:</strong> Organizer and host of the 4th International Workshop on User Innovation, TUM
+                    </div>
+                    <div>
+                      <strong>2004:</strong> Habilitation, Ludwig-Maximilians-Universität München
+                    </div>
+                    <div>
+                      <strong>2002:</strong> Visiting Scholar, MIT Sloan School of Management (March to September)
+                    </div>
+                    <div>
+                      <strong>1999-2004:</strong> Researcher, Institute for Innovation Research and Technology Management, LMU Munich
+                    </div>
+                    <div>
+                      <strong>1997-1999:</strong> Consultant, Bain & Company, Munich
+                    </div>
+                    <div>
+                      <strong>1993-1997:</strong> Doctoral Student, University of Mannheim
+                    </div>
+                    <div>
+                      <strong>1991-1993:</strong> Doctoral Student, University of Bonn, Faculty of Physics
                     </div>
                   </div>
                 </CardContent>
@@ -198,26 +156,33 @@ const About = () => {
                     <Award className="h-5 w-5 text-primary mr-2" />
                     Awards & Honors
                   </h3>
-                  <div className="space-y-3">
+                  <div className="space-y-3 text-xs">
                     <div>
-                      <h4 className="font-semibold text-foreground text-sm">
-                        [Award Name]
+                      <h4 className="font-semibold text-foreground">
+                        Walter Rathenau Prize (Best Paper Award)
                       </h4>
-                      <p className="text-xs text-muted-foreground">[Year] • [Awarding Organization]</p>
+                      <p className="text-muted-foreground">2004 • GEABA</p>
                     </div>
                     <Separator />
                     <div>
-                      <h4 className="font-semibold text-foreground text-sm">
-                        [Grant or Fellowship]
+                      <h4 className="font-semibold text-foreground">
+                        Highly Commended Paper Award
                       </h4>
-                      <p className="text-xs text-muted-foreground">[Year] • [Amount/Duration]</p>
+                      <p className="text-muted-foreground">2007 • EURAM</p>
                     </div>
                     <Separator />
                     <div>
-                      <h4 className="font-semibold text-foreground text-sm">
-                        [Recognition or Honor]
+                      <h4 className="font-semibold text-foreground">
+                        Academy of Management Best Paper
                       </h4>
-                      <p className="text-xs text-muted-foreground">[Year] • [Institution]</p>
+                      <p className="text-muted-foreground">2006, 2007 • AOM</p>
+                    </div>
+                    <Separator />
+                    <div>
+                      <h4 className="font-semibold text-foreground">
+                        Studienstiftung des Deutschen Volkes
+                      </h4>
+                      <p className="text-muted-foreground">1987-1991 • Scholarship</p>
                     </div>
                   </div>
                 </CardContent>
@@ -231,27 +196,84 @@ const About = () => {
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="bg-primary-lighter text-primary">
-                      [Keyword 1]
+                      Profiting from Innovation
                     </Badge>
                     <Badge variant="secondary" className="bg-accent-light text-accent">
-                      [Keyword 2]
+                      Open Innovation
                     </Badge>
                     <Badge variant="secondary" className="bg-research-secondary/20 text-research-secondary">
-                      [Keyword 3]
+                      User Innovation
                     </Badge>
                     <Badge variant="secondary" className="bg-primary-lighter text-primary">
-                      [Keyword 4]
+                      Markets for Technology
                     </Badge>
                     <Badge variant="secondary" className="bg-accent-light text-accent">
-                      [Keyword 5]
+                      Patent Management
                     </Badge>
                     <Badge variant="secondary" className="bg-research-secondary/20 text-research-secondary">
-                      [Keyword 6]
+                      Patent Infringement
                     </Badge>
                   </div>
                 </CardContent>
               </Card>
             </div>
+
+            {/* Editorial Review Boards */}
+            <Card className="bg-card border-border/50">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-serif font-bold text-foreground mb-4">
+                  Editorial Review Boards
+                </h3>
+                <div className="space-y-2 text-sm text-muted-foreground">
+                  <div>• Industrial and Corporate Change</div>
+                  <div>• Research Policy</div>
+                  <div>• Innovation: Organization & Management</div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Ad Hoc Reviewer */}
+            <Card className="bg-card border-border/50">
+              <CardContent className="p-6">
+                <h3 className="text-xl font-serif font-bold text-foreground mb-4">
+                  Ad Hoc Reviewer
+                </h3>
+                
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-foreground text-sm mb-2">Journals</h4>
+                    <div className="text-xs text-muted-foreground space-y-1">
+                      <div>Academy of Management Journal, California Management Review, European Management Review</div>
+                      <div>Industrial and Corporate Change, Journal of Economics and Management Strategy</div>
+                      <div>Management Science, Organization Science, Research Policy, Strategic Management Journal</div>
+                      <div>RAND Journal of Economics, Long Range Planning, Technovation</div>
+                    </div>
+                  </div>
+                  
+                  <Separator />
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground text-sm mb-2">Conferences</h4>
+                    <div className="text-xs text-muted-foreground space-y-1">
+                      <div>Academy of Management Meeting, DRUID Summer Conference</div>
+                      <div>European Academy of Management (EURAM), Strategic Management Society</div>
+                      <div>International Conference on Information Systems (ICIS)</div>
+                    </div>
+                  </div>
+                  
+                  <Separator />
+                  
+                  <div>
+                    <h4 className="font-semibold text-foreground text-sm mb-2">Institutions</h4>
+                    <div className="text-xs text-muted-foreground space-y-1">
+                      <div>Deutsche Forschungsgemeinschaft (DFG)</div>
+                      <div>Copenhagen Business School, Ecole Polytechnique Fédérale de Lausanne</div>
+                      <div>German-Israeli Foundation, Thyssen Foundation</div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

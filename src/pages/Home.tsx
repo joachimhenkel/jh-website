@@ -12,33 +12,33 @@ const Home = () => {
       <section 
         className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero text-primary-foreground"
         style={{
-          backgroundImage: `linear-gradient(rgba(59, 130, 246, 0.8), rgba(29, 78, 216, 0.9)), url(${heroBackground})`,
+          backgroundImage: `url('/src/assets/hero-background-new.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-sans font-bold mb-6 leading-tight">
-              Prof. Dr. Joachim Henkel
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold mb-6 leading-tight max-w-5xl">
+              Technical University of Munich (TUM) - Chair of Innovation & Technology Management
             </h1>
             <p className="text-xl md:text-2xl font-light mb-4 opacity-90">
+              Prof. Dr. Joachim Henkel
+            </p>
+            <p className="text-lg md:text-xl mb-8 opacity-80 max-w-3xl mx-auto">
               Professor of Innovation & Technology Management
             </p>
-            <p className="text-lg md:text-xl mb-8 opacity-80 max-w-3xl mx-auto whitespace-nowrap">
-              Technical University of Munich (TUM) • Chair of Innovation & Technology Management
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild className="text-lg px-8">
+              <Button size="lg" variant="secondary" asChild className="text-lg px-8 bg-primary hover:bg-primary-light text-primary-foreground">
                 <Link to="/research">
                   View Research
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="secondary" asChild className="text-lg px-8">
+              <Button size="lg" variant="secondary" asChild className="text-lg px-8 bg-primary hover:bg-primary-light text-primary-foreground">
                 <Link to="/about">About Me</Link>
               </Button>
-              <Button size="lg" variant="secondary" asChild className="text-lg px-8">
+              <Button size="lg" variant="secondary" asChild className="text-lg px-8 bg-primary hover:bg-primary-light text-primary-foreground">
                 <a href="https://www.ie.mgt.tum.de/en/tim/about-us/prof-dr-joachim-henkel/" target="_blank" rel="noopener noreferrer">
                   <Download className="mr-2 h-5 w-5" />
                   CV

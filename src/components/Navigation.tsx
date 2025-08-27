@@ -22,8 +22,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 font-sans font-semibold text-xl">
-            <span className="text-foreground">Chair of Innovation & Technology Management</span>
+          <Link to="/" className="flex items-center space-x-2">
+            {/* Logo space - intentionally blank */}
           </Link>
 
           {/* Desktop Navigation */}
