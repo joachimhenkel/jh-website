@@ -18,15 +18,15 @@ const Home = () => {
         }}
       >
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto py-12 lg:py-20"> {/* Increased from max-w-4xl and added vertical padding */}
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold mb-6 leading-tight max-w-5xl">
-              Prof. Dr. Joachim Henkel Technical University of Munich (TUM) - Chair of Innovation & Technology Management
+              Prof. Dr. Joachim Henkel
             </h1>
-            <p className="text-xl md:text-2xl font-light mb-4 opacity-90">
-              Technical Univerestiy of Munich (TUM) - Chair of Innovation & Technology Management
-            </p>
-            <p className="text-lg md:text-xl mb-8 opacity-80 max-w-3xl mx-auto">
+            <p className="text-xl md:text-3xl lg:text-4xl font-semibold mb-6 lg:mb-8 opacity-90"> {/* Increased font size and weight */}
               Professor of Innovation & Technology Management
+            </p>
+            <p className="text-lg md:text-2xl lg:text-3xl font-medium mb-12 lg:mb-16 opacity-80 max-w-5xl mx-auto"> {/* Increased font size, weight, and container width */}
+              Technical University of Munich (TUM) - Chair of Innovation & Technology Management 
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" asChild className="text-lg px-8 bg-primary hover:bg-primary-light text-primary-foreground">
@@ -55,10 +55,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-sans font-bold text-foreground mb-4">
+              <h2 className="text-3xl md:text-4xl font-sans font-bold text-foreground mb-4 text-foreground mb-6 lg:mb-8">
                 Research Areas
               </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-5xl mx-auto"> {/* Changed from max-w-2xl to max-w-5xl */}
                 Exploring innovation management, intellectual property, and technology markets
               </p>
             </div>
