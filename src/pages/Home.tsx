@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, BookOpen, Download } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "/lovable-uploads/hero-background.jpg";
 
 const Home = () => {
   return (
@@ -20,10 +20,10 @@ const Home = () => {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans font-bold mb-6 leading-tight max-w-5xl">
-              Technical University of Munich (TUM) - Chair of Innovation & Technology Management
+              Prof. Dr. Joachim Henkel Technical University of Munich (TUM) - Chair of Innovation & Technology Management
             </h1>
             <p className="text-xl md:text-2xl font-light mb-4 opacity-90">
-              Prof. Dr. Joachim Henkel
+              Technical Univerestiy of Munich (TUM) - Chair of Innovation & Technology Management
             </p>
             <p className="text-lg md:text-xl mb-8 opacity-80 max-w-3xl mx-auto">
               Professor of Innovation & Technology Management
