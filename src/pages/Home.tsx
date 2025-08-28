@@ -12,7 +12,7 @@ const Home = () => {
       <section 
         className="relative min-h-[70vh] flex items-center justify-center bg-gradient-hero text-primary-foreground"
         style={{
-          backgroundImage: `url('/src/assets/hero-background-new.jpg')`,
+          backgroundImage: `url('/lovable-uploads/hero-background-new.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
