@@ -13,8 +13,6 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               About Me
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Learn more about my academic journey, research philosophy, and professional background
             </p>
           </div>
 
