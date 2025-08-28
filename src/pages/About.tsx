@@ -13,7 +13,6 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               About Me
             </h1>
-            </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
